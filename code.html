@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Canvas element size: 600 x 300, Canvas drawing surface size: 300 x 150</title>
+		<link rel="stylesheet" type="text/css" href="cssdoc.css" />
+   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+   </head>
+
+  <body onload="gamestart()">
+  <div class="left-panel">
+</div>
+  
+  <form name="counter">
+  <p style="z-index:2; color:white;  font-weight:bold; font-size:25px; text-align:center; position:absolute; top:0; left:5;  border: none;" size="8"> 
+  <input type="text" value="0" style="z-index:2; color:white;  font-weight:bold; font-size:30px; border: none;" size="8" name="s2" id="score">
+  </p>
+  <input type="text" style="z-index:2; color:white;  font-weight:bold; font-size:25px; text-align:center; position:absolute; top:-100; left:100" size="8" name="d2" id="timerval">
+  
+<a class="modalLink" href="#modal1" id="foo"></a>  
+  
+  <div class="overlay"></div>
+
+    <div id="modal1" class="modal">
+        <p onclick="setTimeout('restartgame()',1000)" class="closeBtn">Restart</p>
+        <h2 id="total"></h2>
+    </div>
+  
+  
+  </form> 
+    <canvas id='canvas'>
+      Canvas not supported
+    </canvas>
+	
+    <script src='script1.js'></script>
+
+<div id="left-panel">
+  <p id="content"></p>
+</div>
+      <script type="text/javascript">
+  function showLeftPanel() {
+    var elem = document.getElementById("left-panel");
+    elem.classList.toggle("show");
+  }
+</script>  
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type='text/javascript' src='js/jquery.modal.js'></script>
+    <script type='text/javascript' src='js/site.js'></script>
+
+  </body>
+</html>
