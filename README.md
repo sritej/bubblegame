@@ -1,4 +1,4 @@
 bubblegame
 ==========
 
-Bubble Game
+Bubble game developed during Intel Hackathon 2014
